@@ -23,4 +23,47 @@ public class Bootcamp {
 		// TODO Auto-generated constructor stub
 	}
 
+
+
+
+	public Long getId() {
+		return id;
+	}
+
+
+
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+
+
+
+	public String getNome() {
+		return nome;
+	}
+
+
+
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+
+
+
+	public List<Devs> getDevs() {
+		return devs;
+	}
+
+
+
+
+	public void setDevs(List<Devs> devs) {
+		this.devs = devs;
+	}
+
+	
 }
