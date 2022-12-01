@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author Didi
- *
- */
-module Bootcamp {
-}
