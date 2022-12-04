@@ -5,6 +5,8 @@ public class Devs {
 	private String email;
 	private String cpf;
 	private String telefone;
+	private String cidade;
+	private String uf;
 	private String usuario;
 	private String senha;
 	
@@ -13,16 +15,21 @@ public class Devs {
 	
 	
 	
-	public Devs(String nome, String email, String cpf, String telefone, String usuario, String senha) {
+	
+
+
+	public Devs(String nome, String email, String cpf, String telefone, String cidade, String uf, String usuario,
+			String senha) {
 		
 		this.nome = nome;
 		this.email = email;
 		this.cpf = cpf;
 		this.telefone = telefone;
+		this.cidade = cidade;
+		this.uf = uf;
 		this.usuario = usuario;
 		this.senha = senha;
 	}
-
 
 	public Devs() {
 		// TODO Auto-generated constructor stub
@@ -30,6 +37,23 @@ public class Devs {
 
 	public Long getId() {
 		return id;
+	}
+	
+
+	public String getCidade() {
+		return cidade;
+	}
+
+	public void setCidade(String cidade) {
+		this.cidade = cidade;
+	}
+
+	public String getUf() {
+		return uf;
+	}
+
+	public void setUf(String uf) {
+		this.uf = uf;
 	}
 
 	public void setId(Long id) {
