@@ -1,3 +1,4 @@
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -5,14 +6,20 @@ public class Bootcamp {
 	
 	private Long id;
 	private String nome;
+	private LocalDateTime duracao;
 	List<Devs> devs = new ArrayList<>();
 	
 	
 	
 
-	public Bootcamp(String nome, List<Devs> devs) {
+
+
+
+
+	public Bootcamp(String nome, LocalDateTime duracao, List<Devs> devs) {
 		
 		this.nome = nome;
+		this.duracao = duracao;
 		this.devs = devs;
 	}
 
@@ -42,6 +49,20 @@ public class Bootcamp {
 
 	public String getNome() {
 		return nome;
+	}
+
+
+
+
+	public LocalDateTime getDuracao() {
+		return duracao;
+	}
+
+
+
+
+	public void setDuracao(LocalDateTime duracao) {
+		this.duracao = duracao;
 	}
 
 
